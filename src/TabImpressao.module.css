@@ -1,0 +1,44 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.barWrap {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.barLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.bar {
+  height: 6px;
+  background: var(--bg-4);
+  border-radius: 99px;
+  display: flex;
+  overflow: hidden;
+}
+
+.barEnergy {
+  height: 100%;
+  background: var(--orange);
+  border-radius: 99px 0 0 99px;
+  transition: width 0.4s ease;
+}
+
+.barFilament {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 0 99px 99px 0;
+  transition: width 0.4s ease;
+}
